@@ -1,0 +1,12 @@
+
+Terraform installation steps:
+   
+ FROM ubuntu
+    VOLUME [" /mynewvolue"]
+    RUN apt update -y
+    RUN wget https://releases.hashicorp.com/terraform/1.1.9/terraform_1.1.9_linux_amd64.zip
+    RUN unzip terraform_1.1.9_linux_amd64.zip
+    RUN apt install unzip
+    RUN unzip terraform_1.1.9_linux_amd64.zip
+    RUN echo $PATH
+    RUN mv terraform /usr/local/bin
